@@ -1,0 +1,51 @@
+body {
+  margin: -200px auto 0; /* Adjust the top margin to move content up */
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('C:\Users\jakku\OneDrive\Pictures\jonatan-pie-3l3RwQdHRHg-unsplash.jpg') no-repeat center center fixed; /* Set the image as background */
+  background-size: cover; /* Cover the entire viewport */
+  height: 100vh; /* Ensure full viewport height */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+}
+
+h1, h3, h4, h5, h6 {
+  color: #fff; /* Set all headings to white */
+  word-spacing: normal;
+  margin-bottom: -1050px;
+  margin-left: 13px;
+}
+
+h2 {
+  color: #fff;
+  margin-top: -100px;
+}
+
+p {
+  color: #fff;
+  margin-bottom: 10px;
+  margin-left: 20px;
+
+}
+
+.App {
+  text-align: center;
+}
+
+.button-app {
+  margin-top: 8px;
+  width: 290px;
+  padding: 10px 50px;
+  font-size: 16px;
+  background-color: #1e1a1a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px;
+  display: inline-block; /* Make button fit text width */
+}
+
+.button-app:hover {
+  background-color: #637892;
+}

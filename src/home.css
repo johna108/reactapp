@@ -1,0 +1,98 @@
+/* Home.css */
+.home-container {
+  position: relative;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 1684px; /* Changed */
+  height: 800px; /* Changed */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  backdrop-filter: blur(5px); /* Blur effect */
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  border-radius: 10px;
+}
+
+.content {
+  position: relative; /* Ensure content appears above overlay */
+  z-index: 1; /* Ensure content is on top of overlay */
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.artworks-container {
+  position: relative;
+  top: -520px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px; /* Adjust as needed */
+  padding: 2px; /* Added */
+}
+
+.artwork-box {
+  width: auto; /* Adjust width as needed */
+  background-color: #fff; /* Added */
+  border-radius: 10px; /* Added */
+  overflow: hidden; /* Added */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added */
+  height: auto;
+  transition: transform 0.3s ease; /* Added */
+}
+
+.artwork-box:hover {
+  transform: scale(1.05); /* Added */
+}
+
+.artwork-box img {
+  width: auto;
+  height: auto;
+  border-bottom: 2px solid #ccc; /* Added */
+}
+
+.artwork-box h3 {
+  color: black;
+  text-align: center;
+  padding: 10px 0; /* Added */
+  margin: 0; /* Added */
+}
+
+.buttons {
+  position: relative;
+  margin-top: 10px;
+}
+
+.buy-button,
+.sell-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.buy-button {
+  width: auto;
+  height: fit-content;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.sell-button {
+  width: auto;
+  height: fit-content;
+  background-color: #f44336;
+  color: white;
+  border: none;
+}
+
+.buy-button:hover,
+.sell-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
